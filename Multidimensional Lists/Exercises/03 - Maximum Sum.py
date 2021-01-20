@@ -32,7 +32,7 @@ def max_sum_range(matrix, el_row, el_col):
 
     return sum_of_range
 
-row, columns = tuple(map(int, input().split()))
+row, columns = [int(x) for x in input().split()]
 matrix = matrix_maker(row)
 max_sum = 0
 for el_row in range(row - 2):

@@ -1,23 +1,25 @@
 def matrix_maker(row):
     matrix = []
-    for r in range(row):
+    for _ in range(row):
         # matrix.append(list(map(int,input().split(', '))))
-        matrix.append([int(el) for el in input().split(' ')])
+        matrix.append([int(el) for el in input().split()])
     return matrix
 
 
-rows, columns = map(int, input().split())
-
+rows, columns = input().split()
+rows = int(rows)
+columns = int(columns)
 current_sum = 0
 max_sum = 0
+size = 3
 
 row = None
 column = None
 
 matrix = matrix_maker(rows)
 
-for r in range(rows - 2):
-    for c in range(columns - 2):
+for r in range(rows - size + 1):
+    for c in range(columns - size + 1):
         current_sum = matrix[r][c] + matrix[r][c + 1] + matrix[r][c + 2] \
                       + matrix[r + 1][c] + matrix[r + 1][c + 1] + matrix[r + 1][c + 2] \
                       + matrix[r + 2][c] + matrix[r + 2][c + 1] + + matrix[r + 2][c + 2]
