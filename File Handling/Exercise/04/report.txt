@@ -1,0 +1,13 @@
+.css
+- - - some_css_file.css
+.htm
+- - - asd.htm
+.js
+- - - test_js.js
+.pptx
+- - - some_presentation.pptx
+.py
+- - - directory_traversal.py
+- - - new_py_file.py
+.txt
+- - - report.txt
